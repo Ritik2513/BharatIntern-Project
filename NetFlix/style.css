@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(images/img0.jpg);
+    background-size: max(1200px, 100vw);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+nav img {
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: 'Poppins', sans-serif;
+    height: calc(100%-62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 12px;
+    margin-top: 150px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 8px 24px;
+    font-weight: 400;
+    font-size: 24px;
+    border-radius: 4px;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main input {
+    padding: 10px 101px 8px 14px;
+    font-weight: 900;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.main input[placeholder="Email Address"] {
+    color: white;
+}
+
+/* second page */
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    color: white;
+    height: 110vh;
+}
+
+.secImg {
+    position: relative;
+    display: block;
+}
+
+.secImg img {
+    width: 90%;
+    border: 0;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.secVid {
+    display: block;
+    position: absolute;
+    top: 47%;
+    left: 48.5%;
+    max-width: 73%;
+    max-height: 56%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.secVid video {
+    display: inline-block;
+    vertical-align: baseline;
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+/* second page content */
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    top: 30px;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 44px;
+    font-weight: 1000;
+}
+
+section.first>div :nth-child(2) {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 450;
+    margin-top: 10px;
+}
+
+section.first>div :nth-child(3) {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 450;
+    margin-top: 10px;
+}
+
+section.first>div :nth-child(4) {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 450;
+    margin-top: 10px;
+}
+
+
+
+.second {
+    display: flex;
+    color: white;
+}
+
+.this-sec-img {
+    display: flex;
+}
+
+/* first image */
+.this-sec-img img {
+    position: relative;
+    height: 75%;
+    left: 150px;
+    /* top: 70px; */
+}
+
+/* second image */
+.small-box img {
+    position: absolute;
+    height: 20%;
+    margin-top: 200px;
+    margin-left: 120px;
+}
+
+.this-sec-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.this-sec-content :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.this-sec-content :nth-child(2) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.this-sec-content :nth-child(3) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.this-sec-content :nth-child(4) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.this-sec-content :nth-child(5) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+/* fifth page */
+.fifth-sec-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fifth-sec-content :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.fifth-sec-content :nth-child(2) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.fifth-sec-content :nth-child(3) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.fifth-sec-content :nth-child(4) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.fifth-sec-content :nth-child(5) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* sixth page */
+
+.faq {
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.faqbox {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 70vw;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: all 1s ease-out;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+}
+
+.faqbox span {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.sixth-content {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.heros-buttons {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.heros-buttons input {
+    padding: 10px 101px 8px 14px;
+    font-weight: 900;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+    color: white;
+}
+
+/* footer */
+footer {
+    color: white;
+    max-width: 80vw;
+    margin: 50px auto;
+}
+
+footer span {
+    color: rgba(255, 255, 255, 0.765);
+    cursor: pointer;
+}
+
+.decoration {
+    text-decoration: underline rgba(255, 255, 255, 0.765);
+    ;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    margin-top: 20px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.footer a {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.765);
+}
